@@ -1,6 +1,7 @@
 # JSON Web Token Microservice using Golang
 
-CRUD Validation with JSON Web Token<br>
+User Validation with JSON Web Token<br>
+
 This project is the continuation of [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge)
 <br>at this moment it has no authentication, I will first create the Microservice functionalities and then send a request from the .NET project to validate logins to the system. Then this token will let the user handle data in the CRUD .NET application regarding its corresponding session.
 
