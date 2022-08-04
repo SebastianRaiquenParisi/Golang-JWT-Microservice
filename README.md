@@ -1,7 +1,7 @@
 # JSON Web Token Microservice using Golang
 
 This project is the continuation of [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge)
-at this moment it has no authentication, I will first create the Microservice functionalities and then send a request from the .NET project to validate logins to the system. Then this token will let the user handle data in the CRUD .NET application regarding its corresponding session.
+<br>at this moment it has no authentication, I will first create the Microservice functionalities and then send a request from the .NET project to validate logins to the system. Then this token will let the user handle data in the CRUD .NET application regarding its corresponding session.
 
 Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project.
 
