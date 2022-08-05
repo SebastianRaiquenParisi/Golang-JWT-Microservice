@@ -4,6 +4,8 @@
 User Validation with JSON Web Token<br>
 ![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-login.png?raw=true)
 
+![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-validate.png?raw=true)
+
 
 <-- Implementing Golang JWToken for correct authorization management --><br>
 
