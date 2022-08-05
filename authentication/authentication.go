@@ -23,7 +23,7 @@ var (
 // verify with public key
 func init() {
 
-	privateBytes, err := ioutil.ReadFile("./private.rsa")
+	privateBytes, err := ioutil.ReadFile("../private.rsa")
 	if err != nil {
 		log.Fatal("Could not access the private file")
 	}
