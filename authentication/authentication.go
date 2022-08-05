@@ -4,7 +4,6 @@ import (
 	"crypto/rsa"
 	"encoding/json"
 	"fmt"
-	"http"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -34,14 +33,17 @@ func init() {
 		log.Fatal("Could not access public file")
 	}
 
-	privateKey, err := jwt.ParseRSAPrivateKeyFromPEM(privateBytes)
+	privateKey, err = jwt.ParseRSAPrivateKeyFromPEM(privateBytes)
 	if err != nil {
 		log.Fatal("Could not parse private key")
 	}
-	publicKey, err := jwt.ParseRSAPublicKeyFromPEM(publicBytes)
+	//avoid error
+	publicKey, err = jwt.ParseRSAPublicKeyFromPEM(publicBytes)
 	if err != nil {
 		log.Fatal("Could not parse public key")
 	}
+
+	//avoid error
 
 }
 
@@ -64,7 +66,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	var user models.User
 	err := json.NewDecoder(r.Body).Decode(&user)
 	if err != nil {
-		fmt.Fprintln(w, "Error reading the user %s", err)
+		fmt.Fprintf(w, "Error reading the user %s", err.Error())
 	}
 	if validateUser(user) {
 		// set password to empty
@@ -89,7 +91,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func validateToken(w http.ResponseWritter, r *http.Request) {
+func ValidateToken(w http.ResponseWriter, r *http.Request) {
 	token, err := request.ParseFromRequestWithClaims(r, request.OAuth2Extractor, &models.Claim{}, func(token *jwt.Token) (interface{}, error) {
 		return publicKey, nil
 	})
@@ -108,8 +110,17 @@ func validateToken(w http.ResponseWritter, r *http.Request) {
 				fmt.Fprintln(w, "The token is not valid")
 				return
 			}
-
+		default:
+			fmt.Fprintln(w, "The token is not valid")
+			break
 		}
+	}
+	if token.Valid {
+		w.WriteHeader(http.StatusAccepted)
+		fmt.Fprintln(w, "Welcome! The token is valid for 60 minutes")
+	} else {
+		w.WriteHeader(http.StatusUnauthorized)
+		fmt.Fprintln(w, "The token is not valid")
 	}
 }
 
