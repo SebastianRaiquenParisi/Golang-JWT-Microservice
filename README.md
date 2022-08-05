@@ -1,5 +1,5 @@
 # JSON Web Token Microservice using Golang
-### Self imposed golang challenge after applying to GRID eSports
+### Self imposed Golang challenge applying to GRID eSports as a Jr Dev
 
 User Validation with JSON Web Token<br>
 
