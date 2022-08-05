@@ -124,7 +124,7 @@ func ValidateToken(w http.ResponseWriter, r *http.Request) {
 
 // replace func with searching in json/database
 // and adjusting the functions accordingly
-
+//
 func getRoleFromDB(user models.User) string {
 	return "admin"
 }
