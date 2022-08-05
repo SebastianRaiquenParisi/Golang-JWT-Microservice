@@ -9,6 +9,6 @@ This project is the continuation of [.NETCoreChallenge](https://github.com/Sebas
 
 Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project.
 
-The register should be on this microservice, managing the users data entirely on this Microservice for rehusable puproses
+The register should be on this microservice, managing the users data entirely on this Microservice for rehusable purposes
 
 Here I'll create the users json (later it will be a non relational database) from a [JSON file](https://reqres.in/api/users) but creating the passwords internally
