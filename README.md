@@ -11,4 +11,4 @@ Working as if I had a team that is currently working on the .NET side, focusing 
 
 The register should be on this microservice, to only allow CRUD opera
 
-Here I'll create the users database from a [JSON file](https://reqres.in/api/users) but creating the passwords internally
+Here I'll create the users json (later it will be a non relational database) from a [JSON file](https://reqres.in/api/users) but creating the passwords internally
