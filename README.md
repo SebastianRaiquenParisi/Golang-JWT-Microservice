@@ -1,7 +1,8 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev
 
-User Validation with JSON Web Token<br><br>
+User Validation with JSON Web Token<br>
+Currently had fixed values, currently working on creating the users "database" json (later it will be a non relational database) from this [JSON user values](https://reqres.in/api/users) but creating the passwords internally<br>
 <-- Implementing Golang JWToken for correct authorization management --><br><br>
 ![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-login.png?raw=true)
 
@@ -14,7 +15,7 @@ Microservice aimed to create authorization in [.NETCoreChallenge](https://github
 Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project.
 
 
-Here I'll create the users json (later it will be a non relational database) from a [JSON file](https://reqres.in/api/users) but creating the passwords internally
+Here I'll 
 
 
 Obviously the private key should not be inside the github repository and should be alocated in some other folder locally, but since it is not a real project... it seemed appropriate to show every bit of it in this repository
