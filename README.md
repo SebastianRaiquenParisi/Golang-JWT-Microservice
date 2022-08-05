@@ -2,7 +2,7 @@
 
 User Validation with JSON Web Token<br>
 
-Implementing golang JWToken and JSON serialization/deserealization
+Implementing Golang JWToken and JSON serialization/deserealization
 
 This project is the continuation of [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge)
 <br>at this moment it has no authentication, I will first create the Microservice functionalities and then send a request from the .NET project to validate logins to the system. Then this token will let the user handle data in the CRUD .NET application regarding its corresponding session.
