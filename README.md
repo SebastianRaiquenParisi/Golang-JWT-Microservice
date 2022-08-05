@@ -3,16 +3,13 @@
 
 User Validation with JSON Web Token<br>
 
-Now working with fixed values, implementing json parsing from
 
 
 <-- Implementing Golang JWToken and JSON serialization/deserealization --><br>
 
-Microservice aimed to create authorization in [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge), although it could be used on any project that I make from now on!
-
+Microservice aimed to create authorization in [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge), although it could be used on any project that I make from now on!<br>
 Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project.
 
-The register should be on this microservice, managing the users data entirely on this Microservice for rehusable purposes
 
 Here I'll create the users json (later it will be a non relational database) from a [JSON file](https://reqres.in/api/users) but creating the passwords internally
 
