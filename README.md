@@ -1,6 +1,5 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev
-##### Working as intended!
 User Validation with JSON Web Token<br><br>
 Currently has fixed values, now working on creating the users "database" json (later it will be a non relational database) from this [JSON user values](https://reqres.in/api/users) but creating the passwords internally<br><br>
 <-- Implementing Golang JWToken for correct authorization management --><br><br>
