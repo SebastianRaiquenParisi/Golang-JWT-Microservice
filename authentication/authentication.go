@@ -37,13 +37,11 @@ func init() {
 	if err != nil {
 		log.Fatal("Could not parse private key")
 	}
-	//avoid error
+
 	publicKey, err = jwt.ParseRSAPublicKeyFromPEM(publicBytes)
 	if err != nil {
 		log.Fatal("Could not parse public key")
 	}
-
-	//avoid error
 
 }
 
@@ -66,7 +64,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	var user models.User
 	err := json.NewDecoder(r.Body).Decode(&user)
 	if err != nil {
-		fmt.Fprintf(w, "Error reading the user %s", err.Error())
+		fmt.Fprintf(w, "Error reading the user %s", err)
 	}
 	if validateUser(user) {
 		// set password to empty
@@ -83,7 +81,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		}
 
 		w.WriteHeader(http.StatusOK)
-		w.Header().Set("Content-type", "applitaction/json")
+		w.Header().Set("Content-Type", "application/json")
 		w.Write(jsonResult)
 	} else {
 		w.WriteHeader(http.StatusForbidden)
