@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"time"
 
@@ -9,6 +10,8 @@ import (
 )
 
 var mySigningKey = []byte("supersecretkey")
+
+const PORT = ":9001"
 
 func homePage(w http.ResponseWriter, r *http.Request) {
 	validToken, err := GenerateJWT()
@@ -18,16 +21,25 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, validToken)
 }
 
+// you should recieve a json with username and password, then compare here
+
+//get expected password by email, then
+
+// if not ok return a json saying credentials are not ok
+
+// if not then return jwtoken
+
 func handleRequests() {
 	http.HandleFunc("/", homePage)
+	log.Fatal(http.ListenAndServe(PORT, nil))
 }
 
 func GenerateJWT() (string, error) {
 	token := jwt.New(jwt.SigningMethodHS256)
 	claims := token.Claims.(jwt.MapClaims)
 
-	claims["authorized"] = true
-	claims["email"] = "Elliot Forbes"
+	claims["authorization"] = true
+	claims["email"] = "email"
 	claims["exp"] = time.Now().Add(time.Minute * 30).Unix()
 	tokenString, err := token.SignedString(mySigningKey)
 	if err != nil {
@@ -38,11 +50,6 @@ func GenerateJWT() (string, error) {
 	return tokenString, nil
 }
 func main() {
-	fmt.Println("simple test")
-	tokenString, err := GenerateJWT()
-	if err != nil {
-
-		fmt.Println("Error generating token string")
-	}
-	fmt.Println(tokenString)
+	fmt.Println("server running on port " + PORT)
+	handleRequests()
 }
