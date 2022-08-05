@@ -2,7 +2,7 @@
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev
 
 User Validation with JSON Web Token<br>
-
+![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-login.jpg?raw=true)
 
 
 <-- Implementing Golang JWToken for correct authorization management --><br>
