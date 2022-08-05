@@ -1,5 +1,6 @@
 package main
 
+// the server should be the .NET
 import (
 	"fmt"
 	"log"
