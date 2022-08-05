@@ -2,7 +2,11 @@ package json_handler
 
 import (
 	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"log"
 	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -11,6 +15,8 @@ var client *http.Client
 func GetUsersFromPage() {
 
 }
+
+const userApiPage = "https://reqres.in/api/users?page="
 
 type Response struct {
 	Data []User_dao `json:"data"`
@@ -23,6 +29,25 @@ type User_dao struct {
 	Role       string `json:"role, omitempty"`
 	First_name string `json:"first_name"`
 	Last_name  string `json:"last_name"`
+}
+
+func GetJsonFromPage(page int) {
+	url := userApiPage + strconv.Itoa(page)
+
+	response, err := http.Get(url)
+	if err != nil {
+		fmt.Print(err.Error())
+		return
+	}
+
+	responseData, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+	var responseObject Response
+	json.Unmarshal(responseData, &responseObject)
+
 }
 
 func GetJson(url string, target interface{}) error {
