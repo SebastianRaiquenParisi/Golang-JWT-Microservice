@@ -1,7 +1,7 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev
 
-User Validation with JSON Web Token<br>
+User Validation with JSON Web Token<br><br>
 <-- Implementing Golang JWToken for correct authorization management --><br><br>
 ![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-login.png?raw=true)
 
