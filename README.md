@@ -14,7 +14,7 @@ The next implementation shall be to create a change password page, then an email
 
 <p align="center">
  
-  #####Implemented Golang JWToken for correct authorization management, tested using postman<br>
+  <h4>Implemented Golang JWToken for correct authorization management, tested using postman</h4><br>
 
 ![alt text](https://github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/blob/main/documentation-images/JWT-pm-login.png?raw=true)
 
