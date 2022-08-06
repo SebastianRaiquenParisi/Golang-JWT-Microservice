@@ -1,5 +1,5 @@
 # JSON Web Token Microservice using Golang
-#### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev<br>
+### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev<br>
 Microservice aimed to create authorization in [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge), although it could be used on any project that I make from now on!<br>
 Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project receiving end.<br><br>
 The objective of this project is to show knowledge about:<br>
