@@ -5,10 +5,10 @@ Working as if I had a team that is currently working on the .NET side, focusing 
 The objective of this project is to show knowledge about:<br>
 * GoRoutines, pointers and structs :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
-* JSON marshalization/demarshalization :writing_hand:
-* Microservice architecture :writing_hand:
-* Azure service bus :writing_hand:
-* Simple Docker containers :writing_hand:
+* JSON marshalization/demarshalization :negative_squared_cross_mark:
+* Microservice architecture :negative_squared_cross_mark:
+* Azure service bus :negative_squared_cross_mark:
+* Simple Docker containers :negative_squared_cross_mark:
 
 Currently has fixed values, now working on creating the users "database" json (later it will be a non relational database) from this [JSON user values](https://reqres.in/api/users) creating the passwords manually<br>
 The next implementation shall be to create a change password page, then an email service for the same purpose<br><br>
