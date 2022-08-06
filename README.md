@@ -1,9 +1,11 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev<br>
 The objective of this project is to show knowledge about:<br>
-* GoRoutines, pointers and basic Golang architecture
-* User Validation with JSON Web Token
-* 
+* GoRoutines, pointers and structs 
+* User Validation with JSON Web Token 
+* Microservice architecture :writing_hand:
+* Azure service bus :writing_hand:
+* JSON marshalization/demarshalization :writing_hand:
 
 Currently has fixed values, now working on creating the users "database" json (later it will be a non relational database) from this [JSON user values](https://reqres.in/api/users) creating the passwords manually<br>
 The next implementation shall be to create a change password page, then an email service for the same purpose<br><br>
