@@ -1,5 +1,7 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev<br>
+Microservice aimed to create authorization in [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge), although it could be used on any project that I make from now on!<br>
+Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project receiving end.
 The objective of this project is to show knowledge about:<br>
 * GoRoutines, pointers and structs :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
@@ -17,6 +19,4 @@ The next implementation shall be to create a change password page, then an email
 
 
 
-Microservice aimed to create authorization in [.NETCoreChallenge](https://github.com/SebastianRaiquenParisi/.NETCoreChallenge), although it could be used on any project that I make from now on!<br>
-Working as if I had a team that is currently working on the .NET side, focusing on implementing the Microservice first and then working on the .NET Project receiving end.
 
