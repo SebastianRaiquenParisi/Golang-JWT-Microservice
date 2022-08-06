@@ -1,8 +1,8 @@
 # JSON Web Token Microservice using Golang
 #### Self imposed Golang challenge after applying to GRID eSports as a Jr Dev<br>
 The objective of this project is to show knowledge about:<br>
-* GoRoutines, pointers and structs 
-* User Validation with JSON Web Token 
+* GoRoutines, pointers and structs :heavy_check_mark:
+* User Validation with JSON Web Token :heavy_check_mark:
 * Microservice architecture :writing_hand:
 * Azure service bus :writing_hand:
 * JSON marshalization/demarshalization :writing_hand:
