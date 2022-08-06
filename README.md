@@ -12,7 +12,7 @@ The objective of this project is to show knowledge about:<br>
 Currently has fixed values, now working on creating the users "database" json (later it will be a non relational database) from this [JSON user values](https://reqres.in/api/users) creating the passwords manually<br>
 The next implementation shall be to create a change password page, then an email service for the same purpose<br><br>
 
-<p align="center">
+<p style="text-align: center;">
  
   Implemented Golang JWToken for correct authorization management, tested using postman<br>
 
