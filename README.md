@@ -5,7 +5,8 @@ Working as if I had a team that is currently working on the .NET side, focusing 
 The objective of this project is to show knowledge about:<br>
 * GoRoutines, pointers and structs :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
-* JSON marshalization/demarshalization :negative_squared_cross_mark:
+* JSON marshalization/demarshalization :heavy_check_mark:
+* consume JSON from web API :negative_squared_cross_mark:
 * Microservice architecture :negative_squared_cross_mark:
 * Azure service bus :negative_squared_cross_mark:
 * Simple Docker containers :negative_squared_cross_mark:
