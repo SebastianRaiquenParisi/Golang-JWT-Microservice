@@ -6,8 +6,8 @@ The objective of this project is to show knowledge about:<br>
 * GoRoutines, pointers and structs :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
 * JSON marshalization/demarshalization :heavy_check_mark:
-* Read and write files :negative_squared_cross_mark:
-* consume JSON from web API :negative_squared_cross_mark:
+* Read and write files :negative_squared_cross_mark: :speech_balloon:
+* consume JSON from web API :negative_squared_cross_mark: :speech_balloon:
 * Microservice architecture :negative_squared_cross_mark:
 * Azure service bus :negative_squared_cross_mark:
 * Simple Docker containers :negative_squared_cross_mark:
