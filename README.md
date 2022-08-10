@@ -12,8 +12,8 @@ The objective of this project is to show knowledge about:<br>
 * Azure service bus :negative_squared_cross_mark:
 * Simple Docker containers :negative_squared_cross_mark:
 
-Currently has fixed values, now working on creating the users "database" from this [JSON user values](https://reqres.in/api/users) creating the passwords manually<br>
-This JSON will not be stored, instead the program will create a collection of the json file information with a password and role<br><br>
+Currently has fixed values, now working on creating the users "database" from this [JSON user values](https://reqres.in/api/users).<br>
+The JSON will be stored locally, adding a role and a password<br><br>
 
  
   Implemented Golang JWToken for correct authorization management, tested using postman<br>
