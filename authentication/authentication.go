@@ -24,24 +24,16 @@ var (
 func init() {
 
 	privateBytes, err := ioutil.ReadFile("./should_be_outside_respository/private.rsa")
-	if err != nil {
-		log.Fatal("Could not access the private file")
-	}
+	LogFatalIfError(err, "Could not access the private file")
 
 	publicBytes, err := ioutil.ReadFile("./public.rsa.pub")
-	if err != nil {
-		log.Fatal("Could not access public file")
-	}
+	LogFatalIfError(err, "Could not access public file")
 
 	privateKey, err = jwt.ParseRSAPrivateKeyFromPEM(privateBytes)
-	if err != nil {
-		log.Fatal("Could not parse private key")
-	}
+	LogFatalIfError(err, "Could not parse private key")
 
 	publicKey, err = jwt.ParseRSAPublicKeyFromPEM(publicBytes)
-	if err != nil {
-		log.Fatal("Could not parse public key")
-	}
+	LogFatalIfError(err, "Could not parse public key")
 
 }
 
@@ -54,9 +46,8 @@ func generateJWT(user models.User) string {
 	}
 	token := jwt.NewWithClaims(jwt.SigningMethodRS256, claims)
 	result, err := token.SignedString(privateKey)
-	if err != nil {
-		log.Fatal("Could not sign the token")
-	}
+	LogFatalIfError(err, "Could not sign the token")
+
 	return result
 }
 
@@ -127,6 +118,12 @@ func ValidateToken(w http.ResponseWriter, r *http.Request) {
 //
 func getRoleFromDB(user models.User) string {
 	return "admin"
+}
+
+func LogFatalIfError(err error, message string) {
+	if err != nil {
+		log.Fatal(message)
+	}
 }
 
 func validateUser(user models.User) bool {
