@@ -5,7 +5,7 @@ Working as if I had a team that is currently working on the .NET side, focusing 
 The objective of this project is to show knowledge about:<br>
 * GoRoutines and packages :heavy_check_mark:
 * Pointers :heavy_check_mark:
-* Structs, arrays and slices :heavy_check_mark: :speech_balloon:
+* Structs, arrays and slices :negative_squared_cross_mark: :speech_balloon:
 * Readable code and correct modularization :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
 * JSON marshalization/demarshalization :heavy_check_mark:
