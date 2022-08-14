@@ -25,8 +25,14 @@ type Response struct {
 type User_dao struct {
 	Id         int    `json:"id"`
 	Email      string `json:"email"`
+	First_name string `json:"first_name"`
+	Last_name  string `json:"last_name"`
+}
+type User struct {
+	Id         int    `json:"id"`
+	Email      string `json:"email"`
 	Password   string `json:"password,omitempty"`
-	Role       string `json:"role, omitempty"`
+	Role       string `json:"role"`
 	First_name string `json:"first_name"`
 	Last_name  string `json:"last_name"`
 }
@@ -61,6 +67,6 @@ func GetJson(url string, target interface{}) error {
 	return json.NewDecoder(resp.Body).Decode(target)
 }
 
-func main() {
+func mainP() {
 	client = &http.Client{Timeout: 10 * time.Second}
 }

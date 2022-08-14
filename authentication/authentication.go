@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/db"
 	"github.com/SebastianRaiquenParisi/JWT-Golang-Microservice/models"
 	jwt "github.com/golang-jwt/jwt/v4"
 	"github.com/golang-jwt/jwt/v4/request"
@@ -22,7 +23,7 @@ var (
 // sign with private key
 // verify with public key
 func init() {
-
+	db.CreateAndWriteWithConstants()
 	privateBytes, err := ioutil.ReadFile("./should_be_outside_respository/private.rsa")
 	LogFatalIfError(err, "Could not access the private file")
 

@@ -1,9 +1,12 @@
-package main
+package db
 
 import (
 	"fmt"
 	"os"
 )
+
+const fileName = ""
+const filePath = ""
 
 func main() {
 	openFile("db.json")
@@ -18,6 +21,10 @@ func main() {
 
 func getJsonString() string {
 	return ""
+}
+
+func CreateAndWriteWithConstants() {
+	createAndWrite(filePath, fileName)
 }
 
 func createAndWrite(directory string, txt string) {
