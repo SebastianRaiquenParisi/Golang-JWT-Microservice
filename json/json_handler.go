@@ -37,23 +37,23 @@ type User struct {
 	Last_name  string `json:"last_name"`
 }
 
-func GetJsonFromPage(page int) {
+func GetJsonFromPage(page int) []User_dao {
 	url := userApiPage + strconv.Itoa(page)
-
+	users := []User_dao{}
 	response, err := http.Get(url)
 	if err != nil {
 		fmt.Print(err.Error())
-		return
+		return nil
 	}
 
 	responseData, err := ioutil.ReadAll(response.Body)
 	if err != nil {
 		log.Fatal(err)
-		return
+		return nil
 	}
 	var responseObject Response
 	json.Unmarshal(responseData, &responseObject)
-
+	return users
 }
 
 func GetJson(url string, target interface{}) error {
