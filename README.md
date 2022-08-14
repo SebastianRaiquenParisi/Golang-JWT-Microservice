@@ -11,6 +11,7 @@ The objective of this project is to show knowledge about:<br>
 * JSON marshalization/demarshalization :heavy_check_mark:
 * Read and write files :negative_squared_cross_mark: :speech_balloon:
 * consume JSON from web API :negative_squared_cross_mark: :speech_balloon:
+* Test Driven Development :negative_squared_cross_mark: 
 * Microservice architecture :negative_squared_cross_mark:
 * Azure service bus :negative_squared_cross_mark:
 * Simple Docker containers :negative_squared_cross_mark:
