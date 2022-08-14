@@ -15,7 +15,7 @@ The objective of this project is to show knowledge about:<br>
 * Go channels :negative_squared_cross_mark: 
 * Microservice architecture :negative_squared_cross_mark:
 * Azure service bus :negative_squared_cross_mark:
-* Simple Docker containers :negative_squared_cross_mark:
+* Simple Docker/Kubernetes container :negative_squared_cross_mark:
 
 Currently has fixed values, now working on creating the users "database" from this [JSON user values](https://reqres.in/api/users).<br>
 The JSON will be stored locally, adding a role and a password<br><br>
