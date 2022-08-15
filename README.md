@@ -5,15 +5,17 @@ Working as if I had a team that is currently working on the .NET side, focusing 
 The objective of this project is to show knowledge about:<br>
 * GoRoutines and packages :heavy_check_mark:
 * Pointers :heavy_check_mark:
-* Structs, arrays and slices :negative_squared_cross_mark: :speech_balloon:
+* Structs, arrays and slices :heavy_check_mark:
 * Readable code and correct modularization :heavy_check_mark:
 * User Validation with JSON Web Token :heavy_check_mark:
 * JSON marshalization/demarshalization :heavy_check_mark:
 * Read and write files :negative_squared_cross_mark: :speech_balloon:
 * consume JSON from web API :negative_squared_cross_mark: :speech_balloon:
+* Test Driven Development :negative_squared_cross_mark: 
+* Go channels :negative_squared_cross_mark: 
 * Microservice architecture :negative_squared_cross_mark:
 * Azure service bus :negative_squared_cross_mark:
-* Simple Docker containers :negative_squared_cross_mark:
+* Simple Docker/Kubernetes container :negative_squared_cross_mark:
 
 Currently has fixed values, now working on creating the users "database" from this [JSON user values](https://reqres.in/api/users).<br>
 The JSON will be stored locally, adding a role and a password<br><br>
