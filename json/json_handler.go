@@ -38,7 +38,9 @@ type User struct {
 }
 
 func GetJsonFromPage(page int) []User_dao {
+	// url + page
 	url := userApiPage + strconv.Itoa(page)
+	// users data access object slice
 	users := []User_dao{}
 	response, err := http.Get(url)
 	if err != nil {
@@ -66,7 +68,6 @@ func GetJson(url string, target interface{}) error {
 
 	return json.NewDecoder(resp.Body).Decode(target)
 }
-
 func mainP() {
 	client = &http.Client{Timeout: 10 * time.Second}
 }
